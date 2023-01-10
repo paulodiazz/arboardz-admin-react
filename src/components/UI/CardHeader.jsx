@@ -13,9 +13,9 @@ const CardHeader = ({ type }) => {
           <input type="text" className="bg-transparent outline-none" />
           <SearchIcon />
         </form>
-        <div>
+        <button>
           <FilterIcon />
-        </div>
+        </button>
       </div>
     </div>
   );

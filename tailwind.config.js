@@ -13,7 +13,10 @@ module.exports = {
       boxShadow: {
         card: "0px 6px 12px rgba(0, 0, 0, 0.1)",
       },
+      maxHeight: {
+        form: "90%",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

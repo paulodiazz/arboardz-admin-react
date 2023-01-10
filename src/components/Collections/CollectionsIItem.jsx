@@ -1,5 +1,7 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import EditIcon from "../../Assets/Icons/EditIcon";
+import { UIActions } from "../../store/Redux store/UI-slice";
 
 const CollectionItem = ({
   Policy,
@@ -8,6 +10,11 @@ const CollectionItem = ({
   location,
   supplyTime,
 }) => {
+  const dispatch = useDispatch();
+
+  const showEditCollectionFormHandler = () => {
+    dispatch(UIActions.showEditCollectionForm());
+  };
   return (
     <li className="grid grid-cols-6 py-5 place-items-center text-sm font-semibold tracking-wide break-word border-b border-[#AECEFF] last-of-type:border-none text-[#323A46]">
       <div>
@@ -25,9 +32,9 @@ const CollectionItem = ({
       <div>
         <p>{supplyTime}</p>
       </div>
-      <div>
+      <button onClick={showEditCollectionFormHandler}>
         <EditIcon />
-      </div>
+      </button>
     </li>
   );
 };
