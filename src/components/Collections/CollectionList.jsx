@@ -3,23 +3,23 @@ import CollectionItem from "./CollectionsIItem";
 
 const DUMMY_DATA = [
   {
-    Policy: "adsf98qywhtglhasgoidgjios",
+    Policy: "adsf98qywhtglhasgoidgj",
     artistName: "Serge",
     artboardTitle: "First Project",
     location: "CapeTown",
     supplyTime: "50",
   },
   {
-    Policy: "adsf98qywhtglhasgoidgjios",
+    Policy: "adsf98qywhtglhasgoidgj",
     artistName: "Serge",
-    artboardTitle: "First Project",
+    artboardTitle: "Second Project",
     location: "CapeTown",
     supplyTime: "50",
   },
   {
-    Policy: "adsf98qywhtglhasgoidgjios",
+    Policy: "adsf98qywhtglhasgoidgj",
     artistName: "Serge",
-    artboardTitle: "First Project",
+    artboardTitle: "Third Project",
     location: "CapeTown",
     supplyTime: "50",
   },
