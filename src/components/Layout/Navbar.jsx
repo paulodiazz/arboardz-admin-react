@@ -1,7 +1,7 @@
 import React from "react";
 import CollectorsIcons from "../../Assets/Icons/Collectors";
 import CollectionsIcons from "../../Assets/Icons/Collections";
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 
 export const Navbar = () => {
   const activeClassHandler = ({ isActive }) => {
@@ -13,7 +13,7 @@ export const Navbar = () => {
     <nav className="bg-[#14171F] border-t border-white pt-10 text-white">
       <ul className="grid gap-3 font-semibold text-sm tracking-wide">
         <li>
-          <NavLink className={activeClassHandler} to="/Collectors">
+          <Link className={activeClassHandler} href="/Collectors">
             <span
               aria-hidden
               className="flex items-center justify-center h-[36px] w-[36px]"
@@ -21,10 +21,10 @@ export const Navbar = () => {
               <CollectorsIcons />
             </span>
             Collectors
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink className={activeClassHandler} to="/Collections">
+          <Link className={activeClassHandler} href="/Collections">
             <span
               aria-hidden
               className="flex items-center justify-center h-[36px] w-[36px]"
@@ -32,7 +32,7 @@ export const Navbar = () => {
               <CollectionsIcons />
             </span>
             Collections
-          </NavLink>
+          </Link>
         </li>
       </ul>
     </nav>
