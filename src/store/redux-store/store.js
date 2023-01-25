@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 import UIReducer from "./UI-slice";
+import { createWrapper } from "next-redux-wrapper";
 
-const reduxStore = configureStore({
-  reducer: { UI: UIReducer },
-});
+const makeStore = () => 
+  configureStore({
+    reducer: { UI: UIReducer },
+  })
 
-export default reduxStore;
+export const store = createWrapper(makeStore);

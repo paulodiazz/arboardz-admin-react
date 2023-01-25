@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useDispatch } from "react-redux";
-import { UIActions } from "../../store/Redux store/UI-slice";
+import { UIActions } from "../../store/redux-store/UI-slice";
 
 const MetadataForm = () => {
   const policyRef = useRef();

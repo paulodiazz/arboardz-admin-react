@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import CameraIcon from "../../Assets/Icons/CameraIcon";
-import { UIActions } from "../../store/Redux store/UI-slice";
+import { UIActions } from "../../store/redux-store/UI-slice";
 
 const GeneralDescForm = () => {
   const policyRef = useRef();

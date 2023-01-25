@@ -4,7 +4,7 @@ import {
   AddCollectionFormIsShown,
   EditCollectionFormIsShown,
   UIActions,
-} from "../../store/Redux store/UI-slice";
+} from "../../store/redux-store/UI-slice";
 import Card from "../UI/Card";
 import CardHeader from "../UI/CardHeader";
 import AddCollectionForm from "./AddCollectionForm";

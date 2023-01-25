@@ -11,27 +11,32 @@ export const Navbar = () => {
   };
   return (
     <nav className="bg-[#14171F] border-t border-white pt-10 text-white">
-      <ul className="grid gap-3 font-semibold text-sm tracking-wide">
+      <ul className="grid gap-5 font-semibold text-lg tracking-wide">
         <li>
-          <Link className={activeClassHandler} href="/Collectors">
+          <Link className={activeClassHandler} href="/collectors">
             <span
               aria-hidden
-              className="flex items-center justify-center h-[36px] w-[36px]"
+              className="flex justify-around h-[2rem] w-[200px]"
             >
               <CollectorsIcons />
+              <p>
+                Collectors
+              </p>
             </span>
-            Collectors
           </Link>
         </li>
         <li>
-          <Link className={activeClassHandler} href="/Collections">
+          <Link className={activeClassHandler} href="/collections">
             <span
               aria-hidden
-              className="flex items-center justify-center h-[36px] w-[36px]"
+              className="flex justify-around h-[2rem] w-[200px]"
             >
               <CollectionsIcons />
+              <p>
+                Collections
+              </p>
             </span>
-            Collections
+            
           </Link>
         </li>
       </ul>

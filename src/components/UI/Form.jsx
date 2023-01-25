@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import CancelIcon from "../../Assets/Icons/CancelIcon";
-import { UIActions } from "../../store/Redux store/UI-slice";
+import { UIActions } from "../../store/redux-store/UI-slice";
 
 const Form = ({ Title, children }) => {
   const dispatch = useDispatch();
